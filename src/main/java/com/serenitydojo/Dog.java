@@ -1,25 +1,17 @@
 package com.serenitydojo;
 
-public class Dog {
-    private String name;
+import com.serenitydojo.Pet;
+
+public class Dog extends Pet {
+    public static final String DOG_GAME = "plays with bone";
     private String favoriteToy;
-    private int age;
     private boolean isFed = false;
 
     public static final String DOG_NOISE = "Woof";
 
     public Dog(String name, String favoriteToy, int age) {
-        this.name = name;
+        super(name, age);
         this.favoriteToy = favoriteToy;
-        this.age = age;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public String getFavoriteToy() {
@@ -28,14 +20,6 @@ public class Dog {
 
     public void setFavoriteToy(String favoriteToy) {
         this.favoriteToy = favoriteToy;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
     }
 
     public boolean isFed() {
@@ -48,4 +32,7 @@ public class Dog {
     public void feed() {
         this.isFed = true;
     }
+
+    public String play(){ return DOG_GAME;}
+
 }
