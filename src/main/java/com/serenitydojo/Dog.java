@@ -3,6 +3,7 @@ package com.serenitydojo;
 import com.serenitydojo.Pet;
 
 public class Dog extends Pet {
+    public static final String DOG_GAME = "plays with bone";
     private String favoriteToy;
     private boolean isFed = false;
 
@@ -31,4 +32,7 @@ public class Dog extends Pet {
     public void feed() {
         this.isFed = true;
     }
+
+    public String play(){ return DOG_GAME;}
+
 }

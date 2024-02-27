@@ -1,6 +1,8 @@
 package com.serenitydojo;
 
-public class Pet {
+import javax.swing.table.TableRowSorter;
+
+public abstract class Pet {
     private String name;
     private int age;
 
@@ -25,7 +27,5 @@ public class Pet {
         this.age = age;
     }
 
-    //public void play();
-
-
+    public abstract String play() ;
 }

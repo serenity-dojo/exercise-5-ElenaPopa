@@ -1,6 +1,7 @@
 package com.serenitydojo;
 
 public class Cat extends Pet {
+    public static final String CAT_GAME= "plays with string";
     private String favoriteToy;
 
     public Cat(String name, String favoriteToy, int age) {
@@ -16,4 +17,5 @@ public class Cat extends Pet {
         this.favoriteToy = favoriteToy;
     }
 
+    public String play(){ return CAT_GAME;}
 }
